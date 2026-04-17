@@ -13,6 +13,11 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV STORAGE_PATH=/storage
 
+LABEL org.opencontainers.image.title="ocelot"
+LABEL org.opencontainers.image.description="Ocelot packaged as an ONCE-compatible Docker app"
+LABEL org.opencontainers.image.source="https://github.com/elpdev/ocelot"
+LABEL org.opencontainers.image.vendor="elpdev"
+
 COPY package*.json ./
 RUN npm ci --omit=dev
 
