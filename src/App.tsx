@@ -28,7 +28,7 @@ const IMAGES = {
   map: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPmKfmvohTMKdCBsRSDHvXaa3Lx5IufQSgO9Nqh_g1cbThPnjs7l4JCPVdPNIaALVy1ZIgV11_WjM5d4AGGzrkMGFqWBGc4jY39e855D-nfWM06Iph1WH_lUwlCYGMd24Tm5RP1Wi3cKHlneOCRl8JHO7XLPe6iQ5LKTz1ARqgIjRj1O9AIdz4Y6h83VeqwhwQoxWP-QXCOD2jZEqAy_5o84TsEyEAU430nNJkaTlbQOk_ZnW2S8v5FPvmQTlqvMfs0hlAh_wqQk8",
   palm: "https://lh3.googleusercontent.com/aida-public/AB6AXuCfr1xroQ8AoNC-WE8wEFNZFN9w_IqLf20p6uf7tb1CfTuDdFM-dsJt8wFwOhN5VPvVr4ad3JAtsZaT81WvIE0IHR2QxPWTRhOtTOTAcuZPjQ2Lp8dBRa2-mo6JRMZJuGUuNq-I7yx7BuokkwUpoyuqVJVYkwCS9rUWPhYr5hZwySWeGuxz5Y0Xt8YUSGYZeT_1aEO3p0URqzweLMeJ9Ite8VU0IKBTM8SL1XP0nHTM9KtEt2a8_asoIf0QjxYAwkRlTnidO0Qwivo",
   miami: "https://lh3.googleusercontent.com/aida-public/AB6AXuC5nPIplyeolfbTuZ7-q_P70YmY6a7QMemMQJx_A8wVQBr-M2B46YTg1fcrcLYC5bfze8Td0fWjR2o26AjLwArYY5e12yP_zJa7kkl9UgQ-JcYsye1taJHINYGKQDaPUkO3bRCU-QYo-uBTTcbEcGFfXMyDJiulSbAgBd2hX9KYLj_b_48GuAIjgEAn8q7f5ppVJdWNQGreQKLTwdBRulhaQJConYyqd5Dv01XYjrV98RRsbpk7URJT3sWtG8uhQIZECDcSF4yjcAI",
-  asuncion: "https://lh3.googleusercontent.com/aida/ADBb0uiupcwR8-6B7vJ0mkx5Vij6OjtfZYlGx6JwpgPXcc__ujchGo6r0R8iCqRarlSiVGx3M0pMpSGZsKUYEO3iwaOiE-0ivIFx1IKaPuAlkgqcdbe8Z9wgLYLbmvoJFLRhAQYCinj-ddngSw4CHCOMXqr62IHLZyuIdIGR6APatdCpYBnvWsEllW6kwJ2xaSyobYghaXdbxUuc3Xxnd5E9TG9YrQ6wHqL7nLcrmarVDIR1u9y676DoCxyHuTo"
+  asuncion: "/asuncion.jpg"
 };
 
 const SectionHeader = ({ title, subtitle, align = "left" }: { title: string, subtitle?: string, align?: "left" | "center" }) => (
