@@ -168,11 +168,7 @@ export default function GovernmentRelations() {
 
           {/* Nav links — home sections + active current page */}
           <div className="hidden md:flex items-center gap-10 font-headline uppercase text-xs tracking-widest text-on-surface-variant">
-            <a href="/#thesis"      className="hover:text-on-surface transition-colors">{content.nav.thesis}</a>
-            <a href="/#opportunity" className="hover:text-on-surface transition-colors">{content.nav.opportunity}</a>
-            <a href="/#paraguay"    className="hover:text-on-surface transition-colors">{content.nav.paraguay}</a>
-            <a href="/#structure"   className="hover:text-on-surface transition-colors">{content.nav.structure}</a>
-            <a href="/#leadership"  className="hover:text-on-surface transition-colors">{content.nav.leadership}</a>
+            <a href="/#thesis" className="hover:text-on-surface transition-colors">{content.nav.thesis}</a>
             {/* Active page */}
             <span className="text-secondary border-b-2 border-secondary pb-1">{content.nav.govtRelations}</span>
           </div>
