@@ -112,6 +112,28 @@ const t = {
 
 const cardIcons = [<Building2 size={28} />, <Zap size={28} />, <Globe size={28} />];
 
+// ─── Organisation logos ───────────────────────────────────────────────────────
+const ORG_LOGOS = [
+  {
+    src: "https://usapacc.org/wp-content/uploads/2022/12/pacc-2.png",
+    alt: "Paraguayan-American Chamber of Commerce",
+  },
+  {
+    src: "https://www.ande.gov.py/img/logoande.png",
+    alt: "ANDE – Administración Nacional de Electricidad",
+  },
+  {
+    src: "https://www.mic.gov.py/wp-content/uploads/2023/08/cropped-MINISTERIO-DE-INDUSTRIA-Y-COMERCIO-Curvas-01.png",
+    alt: "Ministerio de Industria y Comercio",
+  },
+];
+
+const OrgLogo = ({ src, alt, className = "" }: { src: string; alt: string; className?: string }) => (
+  <div className={`inline-flex items-center justify-center bg-white rounded-lg px-3 py-2 ${className}`}>
+    <img src={src} alt={alt} className="h-8 w-auto object-contain" />
+  </div>
+);
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function GovernmentRelations() {
   const [lang, setLang] = useState<Lang>(
@@ -211,11 +233,12 @@ export default function GovernmentRelations() {
               <motion.div
                 {...fadeInUp}
                 transition={{ delay: 0.15, duration: 0.6 }}
-                className="mt-14 glass-panel rounded-xl p-8 border-l-[4px] border-primary flex flex-col md:flex-row gap-6 items-start"
+                className="mt-14 glass-panel rounded-xl p-8 border-l-[4px] border-primary flex flex-col md:flex-row gap-6 items-center"
               >
                 <span className="shrink-0 px-3 py-1 bg-primary text-surface text-[10px] tracking-widest font-bold rounded-full uppercase font-headline whitespace-nowrap">
                   {content.membershipLabel}
                 </span>
+                <OrgLogo src={ORG_LOGOS[0].src} alt={ORG_LOGOS[0].alt} className="shrink-0" />
                 <p className="text-on-surface-variant text-sm leading-relaxed">
                   {content.membershipBody}
                 </p>
@@ -241,10 +264,14 @@ export default function GovernmentRelations() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.12, duration: 0.6, ease: 'easeOut' }}
-                    className="p-8 bg-surface-container rounded-xl border-l-[4px] border-primary/20 hover:border-primary transition-all duration-500 hover:bg-surface-bright group"
+                    className="p-8 bg-surface-container rounded-xl border-l-[4px] border-primary/20 hover:border-primary transition-all duration-500 hover:bg-surface-bright group flex flex-col"
                   >
-                    <div className="text-primary mb-6 group-hover:scale-110 transition-transform">
-                      {cardIcons[i]}
+                    {/* Logo + icon row */}
+                    <div className="flex items-center justify-between mb-6">
+                      <OrgLogo src={ORG_LOGOS[i].src} alt={ORG_LOGOS[i].alt} />
+                      <div className="text-primary group-hover:scale-110 transition-transform">
+                        {cardIcons[i]}
+                      </div>
                     </div>
                     <p className="text-primary font-headline text-[10px] font-bold uppercase tracking-widest mb-3">
                       {card.org}
