@@ -293,10 +293,6 @@ export default function App() {
           </div>
           <div className="hidden md:flex items-center gap-10 font-headline uppercase text-xs tracking-widest text-on-surface-variant">
             <a href="#thesis"      className="text-secondary border-b-2 border-secondary pb-1 transition-all">{t.nav.thesis}</a>
-            <a href="#opportunity" className="hover:text-on-surface transition-colors">{t.nav.opportunity}</a>
-            <a href="#paraguay"    className="hover:text-on-surface transition-colors">{t.nav.paraguay}</a>
-            <a href="#structure"   className="hover:text-on-surface transition-colors">{t.nav.structure}</a>
-            <a href="#leadership"         className="hover:text-on-surface transition-colors">{t.nav.leadership}</a>
             <a href="/government-relations" className="hover:text-on-surface transition-colors">{t.nav.govtRelations}</a>
           </div>
           <div className="flex items-center gap-3">
