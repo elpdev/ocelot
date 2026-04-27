@@ -2,28 +2,33 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Ocelot Global
 
-This contains everything you need to run your app locally.
+Marketing site for Ocelot Global, packaged as an ONCE-compatible Docker app.
 
-View your app in AI Studio: https://ai.studio/apps/43f806dc-597f-4e74-b5da-e0223e4fad84
+## Stack
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+Prerequisite: Node.js
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Start the dev server:
    `npm run dev`
+3. Build the production bundle:
+   `npm run build`
 
-## Docker / ONCE packaging
+## Docker
 
-This app can be packaged for ONCE with the required container contract:
+This repository includes a Docker image that satisfies the ONCE app requirements:
 
-- Docker containerized
 - Serves HTTP on port `80`
 - Health endpoint at `/up`
 - Persistent storage mounted at `/storage`
@@ -39,3 +44,14 @@ Run it:
 Health check:
 
 `curl http://localhost/up`
+
+## GHCR Image
+
+- `ghcr.io/elpdev/ocelot:latest`
+- `ghcr.io/elpdev/ocelot:v1.0.0`
+
+## ONCE Deploy
+
+Example deploy:
+
+`once deploy ghcr.io/elpdev/ocelot:v1.0.0 --host ocelot-global.com`
