@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Globe, Building2, Zap, ChevronRight } from 'lucide-react';
 
-const CONTACT_EMAIL = "investors@ocelot-global.com";
+const CONTACT_EMAIL = "invest@ocelot-global.com";
 
 type Lang = 'en' | 'es';
 
