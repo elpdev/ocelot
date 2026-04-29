@@ -22,7 +22,7 @@ import {
   DollarSign
 } from 'lucide-react';
 
-const CONTACT_EMAIL = "investors@ocelot-global.com";
+const CONTACT_EMAIL = "invest@ocelot-global.com";
 
 const IMAGES = {
   hero: "https://lh3.googleusercontent.com/aida-public/AB6AXuCleADSqTjQPXAjn-9dw_PeOZGsmGGXGJggzsNnggziaVrxoK49YEEWgbUMFu_G9Q9OtYgaVOrmR5HFJ6YaPKuYsN8a_W903xHTBi7QDxIZkv_DS-bUbSWQ_qYLeyb0K8s6rE6l3Bp8OR1bon-bB7kAZUlnNXkqE3OsWLXyIPE8IDKUuj3Q7FRPg5og200-WiBhNiRMkn8LOZjQOn50yOsBktbxkkYWeRMvdXxxizwvf40wZbU3Lc7Jk8iwXygmT6NzV5ZbhdDt_rc",
