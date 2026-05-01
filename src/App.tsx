@@ -4,6 +4,7 @@
  */
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   Zap,
@@ -293,7 +294,7 @@ export default function App() {
           </div>
           <div className="hidden md:flex items-center gap-10 font-headline uppercase text-xs tracking-widest text-on-surface-variant">
             <a href="#thesis"      className="text-secondary border-b-2 border-secondary pb-1 transition-all">{t.nav.thesis}</a>
-            <a href="/government-relations" className="hover:text-on-surface transition-colors">{t.nav.govtRelations}</a>
+            <Link to="/government-relations" className="hover:text-on-surface transition-colors">{t.nav.govtRelations}</Link>
           </div>
           <div className="flex items-center gap-3">
             {/* Language Toggle */}
